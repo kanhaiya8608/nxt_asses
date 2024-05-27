@@ -20,7 +20,7 @@ This project is a Resource Management Admin Portal where administrators can view
 
 ## Deployment
 
-The project is deployed using Github Pages and can be accessed [here](https://your-github-username.github.io/resource-management-admin-portal).
+The project is deployed using Github Pages and can be accessed [here](https://nxtasses.netlify.app/).
 
 ## Technologies Used
 
