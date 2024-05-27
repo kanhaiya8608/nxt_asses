@@ -206,9 +206,10 @@ function Home() {
     <Container>
       <Tabs>
         <TabGroup>       
-            <TabButton active={activeTab === 'all'} onClick={() => handleTabChange('all')}>Resources</TabButton>
-        <TabButton active={activeTab === 'request'} onClick={() => handleTabChange('request')}>Requests</TabButton>
-        <TabButton active={activeTab === 'user'} onClick={() => handleTabChange('user')}>Users</TabButton>
+        <TabButton active={activeTab === 'all' ? 'true' : undefined} onClick={() => handleTabChange('all')}>Resources</TabButton>
+<TabButton active={activeTab === 'request' ? 'true' : undefined} onClick={() => handleTabChange('request')}>Requests</TabButton>
+<TabButton active={activeTab === 'user' ? 'true' : undefined} onClick={() => handleTabChange('user')}>Users</TabButton>
+
         </TabGroup>
       </Tabs>
       <SearchContainer>
