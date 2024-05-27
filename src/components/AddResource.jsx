@@ -3,7 +3,7 @@ import { toast, ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import styled from 'styled-components';
 import bgImage from '../assets/bgImage.png';
-
+import NavBar from './NavBar';
 const Container = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -190,7 +190,7 @@ const AddResource = () => {
   };
 
   return (
-    <Container>
+    <><NavBar/>    <Container>
       <FormContainer>
         <h2>Add Resource</h2>
         <Form onSubmit={handleSubmit}>
@@ -231,6 +231,8 @@ const AddResource = () => {
           {/* Background image */}
         </BackgroundImageContainer>
       </Container>
+      </>
+
     );
   };
   

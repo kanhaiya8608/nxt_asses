@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import styled from 'styled-components';
 import { FaSearch } from "react-icons/fa";
+import NavBar from '../components/NavBar'
 
 const Container = styled.div`
   padding: 20px;
@@ -200,6 +201,8 @@ function Home() {
   const paginate = pageNumber => setCurrentPage(pageNumber);
 
   return (
+    <>
+    <NavBar/>
     <Container>
       <Tabs>
         <TabGroup>       
@@ -239,6 +242,7 @@ function Home() {
         ))}
       </Pagination>
     </Container>
+    </>
   );
 }
 
